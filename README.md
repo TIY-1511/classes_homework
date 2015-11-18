@@ -1,56 +1,25 @@
-TIY - week 1 - coursework
-==============
+# Classes
 
-1. Setup a fork of TIY-Rails-1507/week-01-coursework
---------------
+## Setup a fork of this repo
 
 In GitHub you can fork a repo which creates a copy of a repo in another account. For more information 
 see https://help.github.com/articles/fork-a-repo/
 
-Assuming you have not already forked this repo, you are currently reading the week-01-coursework repository, which is under the TIY-Rails-1507 organisation.
-
-Next we will fork this repo so that it is under your account.
-
 The fork button is near the top right in GitHub. Click that and follow the instructions to fork it under your account.
 
-Now there should be a copy of the 'week-01-coursework' repo under your account in GitHub. Next you need to clone this repo locally (to your machine) so that you can edit the files.
+Now there should be a copy of the repo under your name in GitHub. Next you need to clone this repo locally (to your machine) so that you can edit the files.
 
-In GitHub navigate to your copy of the 'week-01-coursework' repo (if you are not there already). Copy the clone url.
+In GitHub navigate to your copy of the repo (if you are not there already). Copy the clone url.
 
-Using the terminal\console on your machine, go to your main development directory.
+Using the terminal\console on your machine, go to your main development directory. Clone the repo and change directory into it.
 
-Type:
-
-```git clone <past the clone url>```
-
-Navigate into the local repo
-
-```cd week-01-coursework```
-
-Now you can make changes commit them locally and push them to GitHub
-
-```
-# add a file, or edit one
-touch new_file.txt
-# add it to the staging area
-git add -A
-# commit it locally 
-git commit -m "This is the commit message"
-# push changes to GitHub
-git push origin master
-```
-This will push to your copy of the repo on GitHub.
 
 Try to push your changes every 10 minutes or as soon as you achieve a small task
 That way you will have a way of getting back to sanity if things go wrong.
 
-In order for me to review the work you have done, go to https://github.com/TIY-Rails-1507/week-01-coursework 
-Click on issues and create one with a link to your GitHub repo where I can see the code
+Please send me links to your code in GitHub if you would like me to review the code. 
 
-You can also look out for other people's repos in the issues.
-Their solutions may help you if you get stuck.
-
-If you could not succeed with any ofthis, then please email me...
+If you could not succeed with any of this, then please shout on Slack...
 
 
 2. Project Person
@@ -70,11 +39,10 @@ num = 100
 puts “The number is #{num}”
 ```
 
-Move the logic that creates the full name into a function.
-
+Move the logic that creates the full name into a function.   
 Place the function above the TestPerson class (above line 3 in person_test.rb). 
 
-The function can be called ‘full_name()’.
+The function can be called `full_name()`.
 
 ```ruby
 def full_name(first_name, last_name)
