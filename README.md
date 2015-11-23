@@ -207,12 +207,60 @@ Make sure the tests pass
 
 Create a main.rb and play around with instances of Account and Bank.
 
-5. Take a break! 
+
+5 Project Invoice
+--------------
+Make a class called `Item` which has a `name`, `price`, and unique `code`.
+
+These fields should be set in the constructor. Allow the name and price to be read and written too. The code should only be read, but not changed.
+
+Create a file called `main.rb` and make sure `Item` is working as expected.
+
+Create a class called `Invoice`. This class should have a method on it called `add` which accepts an `item`. The invoice class should maintain a colleciton of `items` that have been added to it.
+
+The `Invoice` class should have a method called `sub_total` which returns the total cost of all the items, without any tax being applied.
+
+The `Invoice` class should have a method called `total` which returns the total cost of all the items, with a 10% tax being applied.
+
+The `Invoice` class should have a method called `print` which does not return anything, but displays the key information on the screen e.g. items, prices, sub total, total. Spacing is not as important as the actual values.
+
+Test that this class works correctly in `main.rb`.
+
+Note (the catch): you can add the same item more than once e.g.
+
+```ruby
+invoice = Invoice.new()
+drink = Item.new('drink', 1.99, '1011-DRIN')
+sweet = Item.new('chocolate', 2.99, '1010-CHOC')
+
+invoice.add(drink)
+invoice.add(sweet)
+invoice.add(sweet)
+
+invoice.print()
+
+```
+Sample output:
+
+```
+Invoice
+
+drink @ 1.99 x 1 - 1.99
+chocolate @ 2.99 x 2 - 5.98
+
+Sub Total: 7.97
+Tax: 10%
+Total: 8.77
+```
+
+
+
+6 Take a break! 
 --------------
 .. take another one
 
 
-6 Prepare for the next class
+7 Prepare for the next class
 --------------
 
 In the next class we will be moving onto lists (arrays) and hashes
